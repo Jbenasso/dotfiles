@@ -1,0 +1,27 @@
+
+GitHub Repository URL: https://github.com/<jbenasso>/.dotfiles
+
+Summary:
+For this homework, I followed the steps provided in the assignment to set up SSH keys, initialize a Git repository, and create dotfiles for my Bash configuration. Initially, I set up the `.ssh` directory and generated SSH keys for secure communication with GitHub. After that, I created a hidden directory `.dotfiles`, added the `README.md` and `.nanorc` files, and initialized the Git repository. Finally, I linked it to my GitHub repository and pushed the changes. This process was relatively smooth, but I had to ensure the SSH key was correctly configured to avoid authentication issues with GitHub.
+
+Challenges:
+One of the challenges I faced was ensuring that the SSH key was correctly linked to GitHub and that the connection was successful. Additionally, creating the `.nanorc` file and ensuring it was properly copied to my home directory required extra attention. The Git commands were mostly straightforward, but I had to be mindful of the syntax. I also just straight up struggled setting everything up with Git, but that is on me...
+
+Commands Used:
+1. cd ~
+2. mkdir .dotfiles
+3. cd .dotfiles
+4. touch README.md
+5. nano README.md
+6. nano .nanorc
+7. cp .nanorc ~
+8. git init
+9. git add --all
+10. git commit -m "INIT commit"
+11. git branch -M main
+12. git remote add origin git@github.com:<your_git_username>/.dotfiles
+13. git push -u origin main
+
+Resources:
+- GitHub documentation: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+- Bash manual: https://www.gnu.org/software/bash/manual/bash.html
